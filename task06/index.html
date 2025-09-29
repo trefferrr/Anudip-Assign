@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Class Example</title>
+  <style>
+    .para {
+      font-size: 18px;
+      color: blue;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <p class="para">This is a paragraph with an initial class.</p>
+
+  <button onclick="addClass()">Add New Class</button>
+
+  <script>
+    function addClass() {
+      const p = document.querySelector("p");
+      p.classList.add("highlight");
+    }
+  </script>
+</body>
+</html>

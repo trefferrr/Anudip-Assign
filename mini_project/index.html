@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="stars" id="stars"></div>
+        
+        <div class="start-screen" id="startScreen">
+            <h1>GALAXY SHOOTER</h1>
+            <button class="start-btn" onclick="startGame()">START GAME</button>
+            <div class="instructions">
+                <p>Arrow Keys or A/D to move • Spacebar to shoot</p>
+                <p>Survive the alien invasion!</p>
+            </div>
+        </div>
+        
+        <div class="hud">
+            <div class="score">SCORE: <span id="score">0</span></div>
+            <div class="player-health">
+                <div class="health-label">HEALTH:</div>
+                <div class="player-health-bar">
+                    <div class="player-health-fill" id="playerHealthFill"></div>
+                </div>
+                <div class="health-percentage" id="healthPercentage">100%</div>
+            </div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="player" id="player">
+                <div class="spacecraft">
+                    <div class="wing-left"></div>
+                    <div class="wing-right"></div>
+                    <div class="cockpit"></div>
+                    <div class="engine-left"></div>
+                    <div class="engine-right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h1>GAME OVER</h1>
+            <div class="final-score">Final Score: <span id="finalScore">0</span></div>
+            <button class="restart-btn" onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
